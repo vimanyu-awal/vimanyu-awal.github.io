@@ -16,7 +16,7 @@ html, body{
     margin: 0;
     padding: 0;
     background-color: #333;
-    overflow: hidden;
+    overflow: scroll;
 }
 canvas{
     background-color: #000;
@@ -285,7 +285,7 @@ input, select, textarea {
 	}
 
 	pre {
-		-webkit-overflow-scrolling: touch;
+		/* -webkit-overflow-scrolling: touch; */
 		font-family: "Courier New", monospace;
 		font-size: 0.9rem;
 		margin: 0 0 2rem 0;
@@ -295,7 +295,7 @@ input, select, textarea {
 			display: block;
 			line-height: 1.75;
 			padding: 1rem 1.5rem;
-			overflow-x: auto;
+			overflow-x: scroll;
 		}
 
 	hr {
@@ -947,7 +947,7 @@ input, select, textarea {
 
 	.table-wrapper {
 		-webkit-overflow-scrolling: touch;
-		overflow-x: auto;
+		overflow-x: scroll;
 	}
 
 	table {
@@ -1259,7 +1259,7 @@ input, select, textarea {
 				transition-delay: 0.25s;
 				padding: 3rem 2rem;
 				max-height: 40rem;
-				overflow: hidden;
+				overflow: scroll;
 			}
 
 				#header .content .inner > :last-child {
@@ -1470,6 +1470,7 @@ input, select, textarea {
 		max-width: 100%;
 		z-index: 3;
 		pointer-events:auto;
+		overflow: scroll;
 	}
 
 		#main article {
@@ -1488,6 +1489,7 @@ input, select, textarea {
 			background-color: rgba(27, 31, 34, 0.85);
 			border-radius: 4px;
 			opacity: 0;
+			overflow: scroll;
 		}
 
 			#main article.active {
@@ -1496,6 +1498,7 @@ input, select, textarea {
 				-ms-transform: translateY(0);
 				transform: translateY(0);
 				opacity: 1;
+				overflow: scroll;
 			}
 
 			#main article .close {
@@ -1507,7 +1510,7 @@ input, select, textarea {
 				height: 4rem;
 				cursor: pointer;
 				text-indent: 4rem;
-				overflow: hidden;
+				overflow: scroll;
 				white-space: nowrap;
 			}
 
@@ -1528,6 +1531,7 @@ input, select, textarea {
 					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='20px' height='20px' viewBox='0 0 20 20' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %23ffffff%3B stroke-width: 1%3B %7D%3C/style%3E%3Cline x1='2' y1='2' x2='18' y2='18' /%3E%3Cline x1='18' y1='2' x2='2' y2='18' /%3E%3C/svg%3E");
 					background-size: 20px 20px;
 					background-repeat: no-repeat;
+					overflow: scroll;
 				}
 
 				#main article .close:hover:before {
